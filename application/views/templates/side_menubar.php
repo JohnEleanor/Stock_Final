@@ -148,7 +148,7 @@
           <li><a href="<?php echo base_url('users/profile/') ?>"><i class="fa fa-user-o"></i> <span>โปรไฟล์</span></a></li>
         <?php endif; ?>
         <?php if(in_array('updateSetting', $user_permission)): ?>
-          <li><a href="<?php echo base_url('users/setting/') ?>"><i class="fa fa-wrench"></i> <span>ตั้งค่าเว็บไซต์</span></a></li>
+          <li><a href="<?php echo base_url('users/setting/') ?>"><i class="fa fa-wrench"></i> <span>ตั้งค่า</span></a></li>
         <?php endif; ?>
 
         <?php endif; ?>
