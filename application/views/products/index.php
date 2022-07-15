@@ -5,8 +5,8 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Manage
-      <small>Products</small>
+      จัดการ
+      <small>สินค้า</small>
     </h1>
     <ol class="breadcrumb">
       <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -35,28 +35,28 @@
         <?php endif; ?>
 
         <?php if(in_array('createProduct', $user_permission)): ?>
-          <a href="<?php echo base_url('products/create') ?>" class="btn btn-primary">Add Product</a>
+          <a href="<?php echo base_url('products/create') ?>" class="btn btn-primary">เพิ่มสินค้า</a>
           <br /> <br />
         <?php endif; ?>
 
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Manage Products</h3>
+            <h3 class="box-title">จัดการสินค้า</h3>
           </div>
           <!-- /.box-header -->
           <div class="box-body">
             <table id="manageTable" class="table table-bordered table-striped">
               <thead>
               <tr>
-                <th>Image</th>
-                <th>SKU</th>
-                <th>Product Name</th>
-                <th>Price</th>
-                <th>Qty</th>
-                <th>Store</th>
-                <th>Availability</th>
+                <th>รูป</th>
+                <th>หน่วย</th>
+                <th>ชื่อสินค้า</th>
+                <th>ราคา</th>
+                <th>จำนวน</th>
+                <th>ร้าน</th>
+                <th>ความพร้อมใช้งาน</th>
                 <?php if(in_array('updateProduct', $user_permission) || in_array('deleteProduct', $user_permission)): ?>
-                  <th>Action</th>
+                  <th>จัดการ</th>
                 <?php endif; ?>
               </tr>
               </thead>

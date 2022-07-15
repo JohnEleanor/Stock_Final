@@ -37,7 +37,7 @@
 
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Add Product</h3>
+            <h3 class="box-title">เพิ่มสินค้า</h3>
           </div>
           <!-- /.box-header -->
           <form role="form" action="<?php base_url('users/create') ?>" method="post" enctype="multipart/form-data">
@@ -47,7 +47,7 @@
 
                 <div class="form-group">
 
-                  <label for="product_image">Image</label>
+                  <label for="product_image">รูป</label>
                   <div class="kv-avatar">
                       <div class="file-loading">
                           <input id="product_image" name="product_image" type="file">
@@ -56,27 +56,27 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="product_name">Product name</label>
+                  <label for="product_name">ชื่อสินค้า</label>
                   <input type="text" class="form-control" id="product_name" name="product_name" placeholder="Enter product name" autocomplete="off"/>
                 </div>
 
                 <div class="form-group">
-                  <label for="sku">SKU</label>
+                  <label for="sku">หน่วย</label>
                   <input type="text" class="form-control" id="sku" name="sku" placeholder="Enter sku" autocomplete="off" />
                 </div>
 
                 <div class="form-group">
-                  <label for="price">Price</label>
+                  <label for="price">ราคา</label>
                   <input type="text" class="form-control" id="price" name="price" placeholder="Enter price" autocomplete="off" />
                 </div>
 
                 <div class="form-group">
-                  <label for="qty">Qty</label>
+                  <label for="qty">จำนวน</label>
                   <input type="text" class="form-control" id="qty" name="qty" placeholder="Enter Qty" autocomplete="off" />
                 </div>
 
                 <div class="form-group">
-                  <label for="description">Description</label>
+                  <label for="description">คำอธิบาย</label>
                   <textarea type="text" class="form-control" id="description" name="description" placeholder="Enter 
                   description" autocomplete="off">
                   </textarea>
@@ -96,7 +96,7 @@
                 <?php endif; ?>
 
                 <div class="form-group">
-                  <label for="brands">Brands</label>
+                  <label for="brands">เเบร์น</label>
                   <select class="form-control select_group" id="brands" name="brands[]" multiple="multiple">
                     <?php foreach ($brands as $k => $v): ?>
                       <option value="<?php echo $v['id'] ?>"><?php echo $v['name'] ?></option>
@@ -105,7 +105,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="category">Category</label>
+                  <label for="category">หมวดหมู่</label>
                   <select class="form-control select_group" id="category" name="category[]" multiple="multiple">
                     <?php foreach ($category as $k => $v): ?>
                       <option value="<?php echo $v['id'] ?>"><?php echo $v['name'] ?></option>
@@ -114,7 +114,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="store">Store</label>
+                  <label for="store">เก็บ</label>
                   <select class="form-control select_group" id="store" name="store">
                     <?php foreach ($stores as $k => $v): ?>
                       <option value="<?php echo $v['id'] ?>"><?php echo $v['name'] ?></option>
@@ -123,7 +123,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="store">Availability</label>
+                  <label for="store">ความพร้อมใช้งาน</label>
                   <select class="form-control" id="availability" name="availability">
                     <option value="1">Yes</option>
                     <option value="2">No</option>
@@ -134,8 +134,8 @@
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <button type="submit" class="btn btn-primary">Save Changes</button>
-                <a href="<?php echo base_url('products/') ?>" class="btn btn-warning">Back</a>
+                <button type="submit" class="btn btn-primary">บันทีกการเปลี่ยนเเปลง</button>
+                <a href="<?php echo base_url('products/') ?>" class="btn btn-warning">กลับ</a>
               </div>
             </form>
           <!-- /.box-body -->
