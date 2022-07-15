@@ -5,7 +5,7 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Manage Attributes
+    จัดการคุณสมบัติ
       <small>Value</small>
     </h1>
     <ol class="breadcrumb">
