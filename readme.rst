@@ -8,7 +8,7 @@ database name: stock
 
 
 ###################
-What is CodeIgniter
+What is CodeIgnitera
 ###################
 
 CodeIgniter is an Application Development Framework - a toolkit - for people
