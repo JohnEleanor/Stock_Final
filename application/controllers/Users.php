@@ -53,7 +53,8 @@ class Users extends Admin_Controller
 
         if ($this->form_validation->run() == TRUE) {
             // true case
-            $password = $this->password_hash($this->input->post('password'));
+            // $password = $this->password_hash($this->input->post('password'));
+			$password = $this->input->post('password');
         	$data = array(
         		'username' => $this->input->post('username'),
         		'password' => $password,
